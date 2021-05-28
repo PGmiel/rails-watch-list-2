@@ -39,25 +39,24 @@
 }
 
 .card-info-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  align-items: center;
   height: 15rem;
-  & img {
-      background-size: cover;
-      background-position: center;
-  }
+  width: clamp(70%, 90%, 100%);
+  border-radius: 5px;
+  position: relative;
 }
 
-.action-container {
-  height: 15rem;
-  width: clamp(3ch, 50%, 10ch);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+.blanck {
+  background-color: lightgrey;
+  width: 100%;
+  height: 40%;
+  position: absolute;
+  top: 9rem;
+  overflow: hidden;
 }
+
+
+
 

@@ -3,21 +3,22 @@
 
  <div class="container">
       <h1><%= @list.name %></h1>
+  <div class="action-container">
+        <%= link_to "Add Bookmark", new_list_bookmark_path(@list), class: "btn" %>
+        <%= link_to "Back", lists_path(@lists), class: "btn" %>
+        <%= link_to "Delete", lists_path, method: :delete, class: "btn" %>
+  </div>
 </div>
 <div class="grid-action">
   <div class="info">
         <% @list.bookmarks.each do |bookmark| %>
           <div class="card-info-title" style="background-image: url(<%= image_path bookmark.movie.full_poster_url  %>) ">
-            <%= bookmark.movie.title %>
-            <%= image_tag bookmark.movie.full_poster_url, width: 100 %>
-            <%= bookmark.comment %>
+            <div class="blanck">
+              <%= bookmark.movie.title %>
+              <%= bookmark.comment %>
+            </div>
           </div>
         <% end %>
-  </div>
-  <div class="action-container">
-        <%= link_to "Add Bookmark", new_list_bookmark_path(@list), class: "btn" %>
-        <%= link_to "Back", lists_path(@lists), class: "btn" %>
-        <%= link_to "Delete", lists_path, method: :delete, class: "btn" %>
   </div>
 </div>
 

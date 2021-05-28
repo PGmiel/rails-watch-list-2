@@ -13,11 +13,30 @@
 }
 
 .action-container {
-  height: 2rem;
-  padding: 1em;
+  margin: 0px;
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  width: 6em;
+  & .btn {
+    margin-bottom: 10px;
+  }
 }
 
-.grid-action {
+.info {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  gap: 1em;
+  width: 60vw;
+  margin: 0px auto;
+  overflow: hidden;
 }
+
+.blanck {
+  background-color: lightgrey;
+  width: 100%;
+  height: 40%;
+}
+
+
+
