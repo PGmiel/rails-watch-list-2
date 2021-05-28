@@ -1,0 +1,23 @@
+.card-grid {
+  display: grid;
+   grid-template-columns: repeat(3, 1fr);
+   height: 100%;
+   gap: 1em;
+}
+
+.container-grid {
+  height: 20rem;
+  $padding: 1em;
+  padding: $padding;
+  padding-top: 0em;
+}
+
+.action-container {
+  height: 2rem;
+  padding: 1em;
+}
+
+.grid-action {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}

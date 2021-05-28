@@ -1,0 +1,16 @@
+.the-one {
+  height: 5rem;
+  padding: 1em;
+}
+
+.container-form {
+  display: flex;
+  padding: 10px 0px;
+  & .submit {
+  margin-right: 10px;
+  }
+}
+
+.flex-form {
+  display: flex;
+}

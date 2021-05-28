@@ -1,0 +1,29 @@
+.cover {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("jakob-owens-CiUR8zISX60-unsplash.jpg");
+  height: 20rem;
+  width: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+.container {
+  height: 2rem;
+  padding: 1em;
+  & h1 {
+    margin: 0px;
+    font-size: 1rem;
+  }
+}
+
+.container-title {
+  display: flex;
+  justify-content: space-between;
+  & h3 {
+    margin: 0px;
+  }
+}

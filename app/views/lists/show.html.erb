@@ -1,0 +1,33 @@
+<div class="cover">
+</div>
+
+ <div class="container">
+      <h1><%= @list.name %></h1>
+</div>
+<div class="grid-action">
+  <div class="info">
+        <% @list.bookmarks.each do |bookmark| %>
+          <div class="card-info-title">
+            <%= bookmark.movie.title %>
+            <%= image_tag bookmark.movie.full_poster_url, width: 100 %>
+            <%= bookmark.comment %>
+          </div>
+        <% end %>
+  </div>
+  <div class="action-container">
+        <%= link_to "Add Bookmark", new_list_bookmark_path(@list), class: "btn" %>
+        <%= link_to "Back", lists_path(@lists), class: "btn" %>
+        <%= link_to "Delete", lists_path, method: :delete, class: "btn" %>
+  </div>
+</div>
+
+<div class="list-show-card">
+  <h6>Share</h6>
+    <div class="flex">
+      <i class="fab fa-facebook-square"></i>
+      <i class="fab fa-twitter-square"></i>
+      <i class="fab fa-pinterest-square"></i>
+      <i class="fa fa-envelope-square"></i>
+    </div>
+</div>
+

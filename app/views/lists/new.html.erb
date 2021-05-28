@@ -1,0 +1,14 @@
+<div class="cover">
+  <h1>Create your list!</h1>
+</div>
+
+
+<div class="the-one">
+  <%= simple_form_for(@list) do |f| %>
+      <%= f.input :name %>
+    <div class="container-form">
+      <%= f.submit class: 'submit' %>
+      <%= link_to 'Cancel', lists_path(@lists), class: 'btn' %>
+    </div>
+  <% end %>
+</div>

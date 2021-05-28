@@ -1,0 +1,60 @@
+.card-category {
+  background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url("simon-berger-rydQVdwcgUQ-unsplash.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  min-width: 15ch;
+  margin-right: 0px;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  position: relative;
+  border-radius: 2px;
+  & a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+    text-decoration: none;
+    font-size: 0.8em;
+  }
+}
+
+.card-content {
+  font-size: 24px;
+  font-weight: bold;
+  & a {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    color: white;
+  }
+}
+
+.list-show-card {
+  height: 2rem;
+  padding: 1em;
+  & h6 {
+    margin: 0px;
+  }
+}
+
+.card-info-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 15rem;
+  & img {
+      background-size: cover;
+      background-position: center;
+  }
+}
+
+.action-container {
+  height: 15rem;
+  width: clamp(3ch, 50%, 10ch);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+

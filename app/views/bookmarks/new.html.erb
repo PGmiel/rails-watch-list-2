@@ -1,0 +1,16 @@
+<div class="cover">
+  <h1>Add a Bookmark!</h1>
+</div>
+
+<div class="the-one">
+  <%= simple_form_for [@list, @bookmark] do |f| %>
+    <div class="flex-form">
+        <%= f.input :comment %>
+        <%= f.input :movie_id, collection: Movie.all %>
+    </div>
+  <div class="container-form">
+    <%= f.submit class: 'submit' %>
+    <%= link_to 'Cancel', lists_path(@lists), class: 'btn' %>
+  </div>
+<% end %>
+</div>
