@@ -11,11 +11,9 @@
 
   <div class="container-grid">
     <div class="card-grid">
-      <% @lists.each do |list| %>
+      <% @lists.each_with_index do |list, index| %>
         <div class="card-category">
-          <div class="card-content" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)), url("simon-berger-rydQVdwcgUQ-unsplash.jpg")";">
-            <h4><%= link_to list.name, list_path(list) %></h4>
-          </div>
+            <h4><%= link_to list.name, list_path(list), class: "card-content #{index + 1}" %></h4>
         </div>
       <% end %>
     </div>

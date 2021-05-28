@@ -19,14 +19,15 @@
   }
 }
 
-.card-content {
-  font-size: 24px;
+.card-grid .card-content {
+  font-size: 20px;
   font-weight: bold;
-  & a {
-    position: absolute;
-    top: 10px;
-    left: 10px;
-    color: white;
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  color: white;
+  & .1 {
+    grid-column: span 2;
   }
 }
 
@@ -43,7 +44,7 @@
   background-position: center;
   background-repeat: no-repeat;
   height: 15rem;
-  width: clamp(70%, 90%, 100%);
+  width: clamp(45ch, 50%, 75ch);
   border-radius: 5px;
   position: relative;
 }
@@ -53,6 +54,7 @@
   width: 100%;
   height: 40%;
   position: absolute;
+  border-radius: 2px;
   top: 9rem;
   overflow: hidden;
 }
