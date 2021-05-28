@@ -7,7 +7,7 @@
 <div class="grid-action">
   <div class="info">
         <% @list.bookmarks.each do |bookmark| %>
-          <div class="card-info-title">
+          <div class="card-info-title" style="background-image: url(<%= image_path bookmark.movie.full_poster_url  %>) ">
             <%= bookmark.movie.title %>
             <%= image_tag bookmark.movie.full_poster_url, width: 100 %>
             <%= bookmark.comment %>
